@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <SearchBar/>
+    <Home/>
   </div>
 </template>
 
 <script>
 
-import SearchBar from './components/SearchBar.vue';
+import Home from './pages/Home.vue';
 
 export default {
   name: 'App',
+
   components: {
-    SearchBar,
+    Home,
   },
 };
 </script>

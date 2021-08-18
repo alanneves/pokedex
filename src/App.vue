@@ -1,21 +1,33 @@
 <template>
   <div id="app">
-    <Home/>
+    <transition name="fade">
+      <Loading v-if="loading" />
+    </transition>
+
+    <transition name="fade">
+      <router-view />
+    </transition>
   </div>
 </template>
 
 <script>
-
-import Home from './pages/Home.vue';
+import { mapState, mapActions } from 'vuex';
+import Loading from '@/components/Loading.vue';
 
 export default {
-  name: 'App',
-
   components: {
-    Home,
+    Loading,
+  },
+  computed: mapState(['loading']),
+  methods: mapActions(['searchPokemons']),
+  created() {
+    this.searchPokemons();
   },
 };
 </script>
 
 <style lang="scss" scoped>
+#app {
+  height: 100%;
+}
 </style>

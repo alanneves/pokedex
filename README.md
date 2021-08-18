@@ -1,29 +1,26 @@
-# my-pokedex
+## Pokedex
+This project is a simple pokedex to show pokemons games and cities. You can check it [here](https://alanneves.github.io/pokedex/)
 
-## Project setup
-```
-npm install
-```
+## Technologies
+The project is created with:
+* Vue 2
+* Vuex
+* Vue Router
+* Bootstrap Vue
+* Axios
+* FontAwesome
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Challenges
+The main challenge for me was building the interface without a prototype. I decided to use bootstrap to make it easier.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## What i would like to do
+I would like to do unit tests. Also, I would like to use Storybook to document the components. But time was running out.
+## Setup
+To run this project, install it locally using npm:
 
-### Run your unit tests
 ```
-npm run test:unit
+$ git clone https://github.com/alanneves/pokedex.git
+$ cd pokedex
+$ npm install
+$ npm run serve
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
